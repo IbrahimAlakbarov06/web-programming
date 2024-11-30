@@ -1,0 +1,171 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 14, 90);
+    width: 100%;
+    height: 60px;
+}
+.container p{
+    font-size: 20px;
+    padding: 15px;
+    color: aliceblue;
+    margin-right: auto;
+}
+.container ul{
+    display: flex;
+}
+.container li{
+    list-style: none;
+    padding-top: 20px;
+}
+.container a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    margin:10px;
+    padding: 10px 20px;
+}
+.container a:hover{
+    background-color: red;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card div{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 30%;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.card h2{
+    padding-top: 10px;
+}
+.card p{
+    padding: 8px;
+    
+}
+.card a{
+    position: relative;
+    top:30px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 15px 10px;
+    
+}
+
+
+
+.header{grid-area: h;}
+.menu{grid-area: u;}
+.main{grid-area: m;}
+.right{grid-area: r;}
+.footer{grid-area: f;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h h h h h h"
+                         "u m m m r r"
+                         "u f f f f f";
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    height: 400px;
+}
+.grid-container div{
+    border-radius: 20px;
+    background-color: rgb(0, 14, 90);
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+}
+.chess{
+    display: flex;
+}
+
+table{
+    border: 5px solid rgb(123, 55, 0);
+    background-color:rgb(123, 55, 0) ;
+    margin: 5px;
+    padding: 5px;
+}
+.white{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+}
+.black{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+}
+
+.register{
+    width: 570px;
+    height: 570px;
+    background-color: lightgray;
+    text-align: center;
+}
+.register .first{
+    padding-top: 30px;
+    font-size: 30px;
+}
+.register .last{
+    padding-top: 30px;
+    font-size: 30px;
+}
+.register .sel{
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+
+@media (max-width: 800px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .container ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .card div{
+        width: 45%;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                             "u"
+                             "m"
+                             "r"
+                             "f";
+    }
+    .chess{
+        flex-direction: column;
+    }
+
+}
+
+
