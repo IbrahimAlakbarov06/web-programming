@@ -1,0 +1,19 @@
+#menu ul li {
+    display: inline-block;
+    width: 150px;
+    padding-left: 5px 10px;
+    background-color: #0dcaf0;
+    color: #1a1d20;
+    text-align: center;
+}
+
+#arrow {
+    margin-left: 40px;
+    display: block;
+}
+
+#arrow div {
+    float: left;
+    width: 150px;
+    text-align: center;
+}
